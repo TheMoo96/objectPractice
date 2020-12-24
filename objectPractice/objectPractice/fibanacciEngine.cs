@@ -2,7 +2,7 @@
 
 namespace objectPractice
 {
-	public class fibanacciEngine
+	public class FibonacciEngine
 	{
 		// Property.
 		// This is a variable that can be set externally
@@ -23,7 +23,7 @@ namespace objectPractice
 		// Instance Constructor.
 		// This is the heart of the class. Once called it will create an
 		// instance of this using custom variables.
-		public fibanacciEngine()
+		public FibonacciEngine()
         {
 			Base = 0;
         }

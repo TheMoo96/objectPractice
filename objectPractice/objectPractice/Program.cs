@@ -9,7 +9,7 @@ namespace objectPractice
             Console.WriteLine("Hello World!");
 
             // This calls the object to make a new instance of it with the name newClass.
-            fibanacciEngine newClass = new fibanacciEngine();
+            FibonacciEngine newClass = new FibonacciEngine();
 
             // This sets the newClass instance's 'Base' property to 3.
             newClass.Base = 3;
@@ -23,7 +23,7 @@ namespace objectPractice
 
 
             // This will now be repeated to show that it works for two instances.
-            fibanacciEngine secondClass = new fibanacciEngine();
+            FibonacciEngine secondClass = new FibonacciEngine();
 
             secondClass.Base = 1;
 
