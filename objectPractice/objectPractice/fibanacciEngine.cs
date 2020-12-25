@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace objectPractice
 {
@@ -7,25 +8,31 @@ namespace objectPractice
 		// Property.
 		// This is a variable that can be set externally
 		// and used by this script to do something.
-		public int Base { get; set; }
+		private int _Layer { get; set; }
 
-		// Method.
-		// This is a functionality that can be called externally
-		// and that will then do something.
-		// In this case it will return the base property with an int
-		// specified in the ...() on the external.
+		private List<int> _fibList = new List<int> { 1, 1 };
 
-		public int AddWith(int num)
+		// When this is called upon it find fibonacci number _Layer
+		// then return that one.
+		public int FibonacchiReturn()
         {
-			return num + Base;
+			var fibFind = new List<int>();
+			while( fibFind.Count < _Layer)
+            {
+				int pre = _fibList[_fibList.Count - 1];
+				int pre2 = _fibList[_fibList.Count - 2];
+				_fibList.Add(pre + pre2);
+            }
+			int fibFound = _fibList[_fibList.Count - 1];
+			return fibFound;
         }
 
 		// Instance Constructor.
 		// This is the heart of the class. Once called it will create an
 		// instance of this using custom variables.
-		public FibonacciEngine()
+		public FibonacciEngine(int layer)
         {
-			Base = 0;
+			_Layer = layer;
         }
 	}
 }
