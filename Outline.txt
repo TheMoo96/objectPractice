@@ -1,0 +1,3 @@
+program asks user how many layers into the fibonacci sequence it wants to go.
+
+other object goes and takes the request and works it out, then returns the last number in the sequence.
